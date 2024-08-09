@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" value="IETE welcomes you on board in a world where you can learn and showcase your skills.Fill this form to join">
+    <title>ISTE-Recruitment Form</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .image{
+        height:90px;
+        width: 90px;
+        border: 2px solid;
+        border-radius: 50%;
+    }
+    .navbar{
+        height: 15vh;
+        width: 100vw;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(29, 14, 52);
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    ul{
+        width: 60vw;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: medium;
+        padding: 12px 6px;
+    }
+    
+    a:hover{
+        border: 1px solid white;
+        font-size: large;
+        transition: all .5s;
+    }
+    .form{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 100vw;
+    }
+    form{
+        background-color: white;
+        padding: 10px;
+        height: 120vh;
+        width: 40vw;
+        margin: auto;
+        border-radius: 10px;
+    }
+    label{
+        display: block;
+        color: #555555;
+        margin:4px
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: 1px solid grey;
+    }
+    #submit {
+        background-color: black;
+        width: 40%;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+    #reset {
+        width: 40%;
+        background-color: rgba(52, 51, 51, 0.788);
+        color: white;
+       border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+    #submit:hover {
+        border: 2px solid gold; 
+        font-size: large;
+        transition: all .2s; 
+    }
+    #reset:hover{
+        border: 2px solid gold;
+        font-size: large;
+        transition: all .2s;
+    }
+    .buttons{
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="image">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Qc4cGSMZMfFrSB-Bgg_IuAAAAA&pid=Api&P=0&h=180" alt="logo">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="form">
+        <form action="#" method="post">
+            <h1 style="font-size: medium;font-family: Arial, Helvetica, sans-serif;color: #555555;">Recruitment Form</h1>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" autofocus required><br>
+            <label for="roll number">Roll number:</label>
+            <input type="number" name="roll number" id="roll number" required><br>
+            <label for="branch">Branch:</label>
+            <input type="text" name="branch" id="branch" required><br>
+            <label for="year">Year of Passout:</label>
+            <select name="year" id="year" required>
+                <option value="year">2028</option>
+                <option value="year">2027</option>
+            </select><br><br>
+            <label for="email">Email id:</label>
+            <input type="email" name="email" id="email" required><br>
+            <div style="color: #555555;">Preffered field:</div>
+            <input style="display: inline;" type="radio" value="Tech" id="Tech" name="field">
+            <label style="display: inline;" for="Tech">Tech</label><br>
+            <input type="radio" value="NonTech" id="NonTech" name="field">
+            <label style="display: inline;" for="NonTech">NonTech</label><br><br>
+            <label for="answer">Do you have any experience in the selected field:</label><br>
+            <textarea rows="3" name="answer" id="answer" placeholder="Submit projet links if any"></textarea><br>
+            <label for="why">Why do you want to join IETE ?</label>
+            <textarea rows="1" name="why" id="why"></textarea required><br>
+                <div class="buttons">
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </div>
+            </form>
+        </div>
+</body>
+</html>
+
